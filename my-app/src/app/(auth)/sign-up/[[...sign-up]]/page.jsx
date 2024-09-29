@@ -21,7 +21,7 @@ export default function Page() {
               src="https://lottie.host/82a42911-0e9a-4534-ae52-5869b1b33ff3/lrDUHHVGB3.json"
               background="transparent"
               speed="1"
-              style={{ width: "500", height: "500" }}
+              style={{ width: "300", height: "300" }}
               loop
               autoplay
             ></dotlottie-player>

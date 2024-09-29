@@ -15,13 +15,15 @@ export default function Page() {
     <section className="bg-white">
       <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
         <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
+          
           <div className="absolute inset-0 flex justify-center items-center">
             {/* Lottie Animation */}
+            
             <dotlottie-player
               src="https://lottie.host/82a42911-0e9a-4534-ae52-5869b1b33ff3/lrDUHHVGB3.json"
               background="transparent"
               speed="1"
-              style={{ width: "300px", height: "300px" }}
+              style={{ width: "700px", height: "700px" }}
               loop
               autoplay
             ></dotlottie-player>
