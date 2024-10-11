@@ -38,12 +38,12 @@ function SideNav() {
       icon: ReceiptText,
       path: "/dashboard/expenses",
     },
-    {
-      id: 4,
-      name: "Upgrade",
-      icon: ShieldCheck,
-      path: "/dashboard/upgrade",
-    },
+    // {
+    //   id: 4,
+    //   name: "Upgrade",
+    //   icon: ShieldCheck,
+    //   path: "/dashboard/upgrade",
+    // },
   ];
   const path = usePathname();
 
@@ -54,7 +54,7 @@ function SideNav() {
       <div className="h-screen p-5 border shadow-xl shadow-slate-700">
       
       <div className="flex flex-row items-center">
-        <Image src={"logo.svg"} alt="logo" width={35} height={35} />
+        <Image src="/logo.png" alt="logo" width={35} height={35} />
         <span className="text-blue-900 font-bold text-xl p-2">Smart Wallet AI</span>
       </div>
       <div className="mt-10">
@@ -68,7 +68,7 @@ function SideNav() {
                     hover:text-blue-900 hover:bg-blue-200
                     ${path == menu.path && "text-blue-900 bg-blue-100"}
                     `}
-            >
+              >
               <menu.icon />
               {menu.name}
             </h2>

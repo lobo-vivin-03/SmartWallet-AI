@@ -5,17 +5,17 @@ export const Budgets = pgTable('budgets',{
   id: serial('id').primaryKey(),
   name:varchar('name').notNull(),
   amount:varchar('amount').notNull(),
-  Icon:varchar('icon'),
+  // Icon:varchar('icon'),
   createdBy:varchar('createdby').notNull()
 
 })
 
 //income schema
-export const Income = pgTable('incomes',{
+export const Incomes = pgTable('incomes',{
   id: serial('id').primaryKey(),
   name:varchar('name').notNull(),
   amount:varchar('amount').notNull(),
-  Icon:varchar('icon'),
+  // Icon:varchar('icon'),
   createdBy:varchar('createdby').notNull()
 
 })
