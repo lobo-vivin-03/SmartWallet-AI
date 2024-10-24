@@ -6,7 +6,7 @@ function BudgetItem({ budget }) {
     const perc = (budget.totalSpend / budget.amount) * 100;
     return perc > 100 ? 100 : perc.toFixed(2);
   };
-  console.log("Budget Icon:", budget.icon);
+  // console.log("Budget Icon:", budget.icon);
 
   return (
     <Link href={"/dashboard/expenses/" + budget?.id}>

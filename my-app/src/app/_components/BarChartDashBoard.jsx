@@ -10,8 +10,10 @@ import {
 } from "recharts";
 
 function BarChartDashBoard({budgetList}){
+  
   return (
     <div className='border rounded-2xl p-5'>
+      
       <h2 className='font-bold text-lg'>
         Activity
       </h2>

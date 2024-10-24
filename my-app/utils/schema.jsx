@@ -21,12 +21,12 @@ export const Incomes = pgTable('incomes',{
 })
 
 //expenses 
-export const Expenses = pgTable('expenses',{
+export const Expenses = pgTable('expenses', {
   id: serial('id').primaryKey(),
-  name:varchar('name').notNull(),
-  amount:varchar('amount').notNull(),
-  budgetId:integer('budget').references(() => Budgets.id),
-  createdBy:varchar('createdby').notNull()
+  name: varchar('name').notNull(),
+  amount: varchar('amount').notNull(),
+  budget: integer('budget').references(() => Budgets.id), // Change made here
+  createdBy: varchar('createdby').notNull()
+});
 
-})
 
